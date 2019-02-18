@@ -20,7 +20,7 @@ spl_autoload_register( function ( $class ) {
 		return;
 	}
 
-	$plugin_folder = 'wp-mail-smtp';
+	$plugin_folder = basename(__DIR__);
 
 	// Default directory for all code is plugin's /src/.
 	$base_dir = plugin_dir_path( __DIR__ ) . '/' . $plugin_folder . '/src/';
